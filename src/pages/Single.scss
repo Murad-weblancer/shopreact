@@ -1,0 +1,141 @@
+.single {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 15px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.single__images {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    width: 70%;
+  }
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.single__images--min {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.single__images--min li {
+  width: 100%;
+  height: 150px;
+  transition: box-shadow 0.3s;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.single__images--min li.active {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.single__images--min li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.single__images--big {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.single__images--big img {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.single__content {
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.single__content--title {
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.single__content--price,
+.single__content--info {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: black;
+}
+
+.single__content--info {
+  margin: 20px 0 10px;
+}
+
+.single__content--list {
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.single__content--list li {
+  list-style: disc;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.single__content--btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.single__content--btn span {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.single__content--btn a{
+  color: white;
+}
+
+.single__content--btn span::before {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.btn-dark {
+  padding: 12px 46px;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #313131;
+  display: inline-flex;
+  text-transform: uppercase;
+  @media (max-width: 768px) {
+    padding: 12px 26px;
+  }
+}

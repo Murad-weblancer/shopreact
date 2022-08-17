@@ -1,0 +1,18 @@
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li{
+        font-size: 19px;
+        font-weight: 600;
+        cursor: pointer;
+        border-bottom:2px solid transparent ;
+
+        &.active{
+            border-bottom:2px solid black ;
+        }
+        @media (max-width:480px){
+            font-size: 16px;
+        }
+    }
+}

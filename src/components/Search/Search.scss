@@ -1,0 +1,42 @@
+.search{
+    max-width: 430px;
+    min-height: 46px;
+    outline: 1px solid black;
+    width: 100%;
+    position: relative;
+    display: flex;
+    input{
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        padding: 15px 10px;
+        font-size: 18px;
+        line-height: 19px;
+        color: black;
+
+    }
+    img{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 1%;
+        right: 0;
+    }
+}   
+.blcok{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @media (max-width:768px){
+            flex-direction: column;
+            justify-content: center;
+    }
+    a{
+        margin-right: 18%;
+        @media (max-width:768px){
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
